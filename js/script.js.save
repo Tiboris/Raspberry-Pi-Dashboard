@@ -1,0 +1,9 @@
+var request = new XMLHttpRequest();
+request.open('GET','read.php');
+request.onreadystatechange = function() {
+	if((request.status === 200) && (request.readyState === 4)) {
+		console.log(request);
+		alert
+	}
+}
+request.send();
