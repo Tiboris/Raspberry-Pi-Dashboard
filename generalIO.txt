@@ -17,10 +17,8 @@
 						<tbody>
 							<tr>
 								<td style="vertical-align: top;"><h4>3.3V</h4></td>
-								<td style="align-content: center;"><h4 align="center">
-									<button class="btn pull-left disabled" style="margin-right: 20px;">Turn On</button>
-									<button class="btn pull-left disabled">Turn On</button></h4>
-								</td>
+								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
+								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
 								<td style="vertical-align: bottom;"><h4 align="right">5V</h4></td>
 							</tr>
 							<tr>
