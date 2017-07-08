@@ -670,8 +670,10 @@ h2.title {
   transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
 .main-panel > .content {
-  margin-top: 40px;
+  margin-top: 70px;
   padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   min-height: calc(100% - 123px);
 }
 .main-panel > .footer {
@@ -2372,7 +2374,8 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 2px 1px;
+  padding-left: 7px;
+  padding-right:7px;
   vertical-align: middle;
 }
 .table > thead > tr > th {
@@ -2383,7 +2386,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 .table .td-actions .btn {
   margin: 0px;
-  padding: 5px;
+  padding: 1px;
 }
 .table > tbody > tr {
   position: relative;
@@ -3539,6 +3542,7 @@ footer .btn {
   position: relative;
   width: 100%;
   margin-top: 16px;
+  margin-bottom: 20px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   border-radius: 3px;
   color: rgba(0,0,0, 0.87);
@@ -3578,15 +3582,18 @@ footer .btn {
   color: #999999;
 }
 .card .card-content {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
 }
 .card .card-content .category {
   margin-bottom: 0;
 }
 .card .card-header {
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  margin: -20px 10px 0;
+  margin-top: -20px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 3px;
   padding: 15px;
   background-color: #999999;
