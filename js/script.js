@@ -234,7 +234,7 @@ document.onload = dashboard();
 
 function gp0(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run0.php');
+	request.open('GET','switches/run0.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -253,7 +253,7 @@ function gp0(){
 
 function gp1(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run1.php');
+	request.open('GET','switches/run1.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -270,7 +270,7 @@ function gp1(){
 };
 function gp2(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run2.php');
+	request.open('GET','switches/run2.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -287,7 +287,7 @@ function gp2(){
 };
 function gp3(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run3.php');
+	request.open('GET','switches/run3.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -304,7 +304,7 @@ function gp3(){
 };
 function gp4(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run4.php');
+	request.open('GET','switches/run4.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -321,7 +321,7 @@ function gp4(){
 };
 function gp5(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run5.php');
+	request.open('GET','switches/run5.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -338,7 +338,7 @@ function gp5(){
 };
 function gp6(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run6.php');
+	request.open('GET','switches/run6.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -355,7 +355,7 @@ function gp6(){
 };
 function gp7(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run7.php');
+	request.open('GET','switches/run7.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -372,7 +372,7 @@ function gp7(){
 };
 function gp21(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run21.php');
+	request.open('GET','switches/run21.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -389,7 +389,7 @@ function gp21(){
 };
 function gp22(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run22.php');
+	request.open('GET','switches/run22.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -406,7 +406,7 @@ function gp22(){
 };
 function gp23(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run23.php');
+	request.open('GET','switches/run23.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -423,7 +423,7 @@ function gp23(){
 };
 function gp24(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run24.php');
+	request.open('GET','switches/run24.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -440,7 +440,7 @@ function gp24(){
 };
 function gp25(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run25.php');
+	request.open('GET','switches/run25.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -457,7 +457,7 @@ function gp25(){
 };
 function gp26(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run26.php');
+	request.open('GET','switches/run26.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -474,7 +474,7 @@ function gp26(){
 };
 function gp27(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run27.php');
+	request.open('GET','switches/run27.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -491,7 +491,7 @@ function gp27(){
 };
 function gp28(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run28.php');
+	request.open('GET','switches/run28.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
@@ -508,7 +508,7 @@ function gp28(){
 };
 function gp29(){
 	var request = new XMLHttpRequest();
-	request.open('GET','run29.php');
+	request.open('GET','switches/run29.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			if (request.responseText.charAt(0) == "1") {
