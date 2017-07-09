@@ -176,29 +176,29 @@ function storage(){
 }
 
 function ram(){
-        var request = new XMLHttpRequest();
-        request.open('GET', 'ram.php');
-        request.onreadystatechange = function() {
-                if((request.status === 200) && (request.readyState === 4)) {
-                	console.log(request);
-                        var str = request.responseText.split(" ");
-                        document.getElementById("ram").innerHTML = str[19] + "/" + str[11] + "<small> MB</small>";
-                }
-        }
-        request.send();
+	var request = new XMLHttpRequest();
+	request.open('GET', 'ram.php');
+	request.onreadystatechange = function() {
+		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
+			var str = request.responseText.split(" ");
+			document.getElementById("ram").innerHTML = str[19] + "/" + str[11] + "<small> MB</small>";
+		}
+	}
+	request.send();
 }
 
 function cpu_usage(){
-        var request = new XMLHttpRequest();
-        request.open('GET', 'cpu_usage.php');
-        request.onreadystatechange = function() {
-                if((request.status === 200) && (request.readyState === 4)) {
-                	console.log(request);
-                        var str = request.responseText.split(" ");
+	var request = new XMLHttpRequest();
+	request.open('GET', 'cpu_usage.php');
+	request.onreadystatechange = function() {
+		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
+			var str = request.responseText.split(" ");
 			document.getElementById("cpu").innerHTML = str[11].split(",")[0].split(".")[1] + "<small> %</small>";
-                }
-        }
-        request.send();
+		}
+	}
+	request.send();
 }
 
 function dashboard(){
