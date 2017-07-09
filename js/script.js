@@ -3,6 +3,7 @@ function gpio() {
 	request.open('GET','read.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp0").innerHTML = "Turn OFF";
@@ -166,6 +167,7 @@ function storage(){
 	request.open('GET', 'storage.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			var str = request.responseText.split(" ");
 			document.getElementById("storage").innerHTML = Math.round((parseInt(str[12]) / 1024) *100)/100 + "/" + Math.round((parseInt(str[10]) / 1024) *100)/100 + "<small> GB</small>";
 		}
@@ -178,6 +180,7 @@ function ram(){
         request.open('GET', 'ram.php');
         request.onreadystatechange = function() {
                 if((request.status === 200) && (request.readyState === 4)) {
+                	console.log(request);
                         var str = request.responseText.split(" ");
                         document.getElementById("ram").innerHTML = str[19] + "/" + str[11] + "<small> MB</small>";
                 }
@@ -190,6 +193,7 @@ function cpu_usage(){
         request.open('GET', 'cpu_usage.php');
         request.onreadystatechange = function() {
                 if((request.status === 200) && (request.readyState === 4)) {
+                	console.log(request);
                         var str = request.responseText.split(" ");
 			document.getElementById("cpu").innerHTML = str[11].split(",")[0].split(".")[1] + "<small> %</small>";
                 }
@@ -202,6 +206,7 @@ function dashboard(){
 	request.open('GET','dashboard.txt');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			document.getElementById("dashh").setAttribute("class", "active");
 			document.getElementById("generalIO").setAttribute("class", "")
 			document.getElementById("navTitle").innerHTML = "&nbsp; Dashboard";
@@ -219,6 +224,7 @@ function generalIO(){
 	request.open('GET','generalIO.txt');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			document.getElementById("dashh").setAttribute("class", "");
 			document.getElementById("generalIO").setAttribute("class", "active")
 			document.getElementById("navTitle").innerHTML = "&nbsp; GPIO";
@@ -237,6 +243,7 @@ function gp0(){
 	request.open('GET','switches/run0.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp0").innerHTML = "Turn OFF";
@@ -256,6 +263,7 @@ function gp1(){
 	request.open('GET','switches/run1.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp1").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp1").innerHTML = "Turn OFF";
@@ -273,6 +281,7 @@ function gp2(){
 	request.open('GET','switches/run2.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp2").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp2").innerHTML = "Turn OFF";
@@ -290,6 +299,7 @@ function gp3(){
 	request.open('GET','switches/run3.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp3").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp3").innerHTML = "Turn OFF";
@@ -307,6 +317,7 @@ function gp4(){
 	request.open('GET','switches/run4.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp4").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp4").innerHTML = "Turn OFF";
@@ -324,6 +335,7 @@ function gp5(){
 	request.open('GET','switches/run5.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp5").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp5").innerHTML = "Turn OFF";
@@ -341,6 +353,7 @@ function gp6(){
 	request.open('GET','switches/run6.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp6").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp6").innerHTML = "Turn OFF";
@@ -358,6 +371,7 @@ function gp7(){
 	request.open('GET','switches/run7.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp7").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp7").innerHTML = "Turn OFF";
@@ -375,6 +389,7 @@ function gp21(){
 	request.open('GET','switches/run21.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp21").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp21").innerHTML = "Turn OFF";
@@ -392,6 +407,7 @@ function gp22(){
 	request.open('GET','switches/run22.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp22").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp22").innerHTML = "Turn OFF";
@@ -409,6 +425,7 @@ function gp23(){
 	request.open('GET','switches/run23.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp23").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp23").innerHTML = "Turn OFF";
@@ -426,6 +443,7 @@ function gp24(){
 	request.open('GET','switches/run24.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp24").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp24").innerHTML = "Turn OFF";
@@ -443,6 +461,7 @@ function gp25(){
 	request.open('GET','switches/run25.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp25").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp25").innerHTML = "Turn OFF";
@@ -460,6 +479,7 @@ function gp26(){
 	request.open('GET','switches/run26.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp26").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp26").innerHTML = "Turn OFF";
@@ -477,6 +497,7 @@ function gp27(){
 	request.open('GET','switches/run27.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp27").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp27").innerHTML = "Turn OFF";
@@ -494,6 +515,7 @@ function gp28(){
 	request.open('GET','switches/run28.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp28").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp28").innerHTML = "Turn OFF";
@@ -511,6 +533,7 @@ function gp29(){
 	request.open('GET','switches/run29.php');
 	request.onreadystatechange = function() {
 		if((request.status === 200) && (request.readyState === 4)) {
+			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
 				document.getElementById("gp29").setAttribute("class", "btn btn-success pull-left");
 				document.getElementById("gp29").innerHTML = "Turn OFF";
