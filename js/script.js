@@ -5,11 +5,11 @@ function gpio() {
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp0").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp0").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp0").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp0").innerHTML = "Turn ON";
 			}
 
@@ -23,20 +23,20 @@ function gpio() {
 			}
 
 			if (request.responseText.charAt(4) == "1") {
-				document.getElementById("gp2").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp2").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp2").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp2").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp2").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp2").innerHTML = "Turn ON";
 			}
 			
 			if (request.responseText.charAt(6) == "1") {
-				document.getElementById("gp3").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp3").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp3").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp3").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp3").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp3").innerHTML = "Turn ON";
 			}
 
@@ -68,56 +68,56 @@ function gpio() {
 			}
 
 			if (request.responseText.charAt(14) == "1") {
-				document.getElementById("gp7").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp7").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp7").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp7").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp7").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp7").innerHTML = "Turn ON";
 			}
 
 			if (request.responseText.charAt(16) == "1") {
-				document.getElementById("gp21").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp21").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp21").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp21").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp21").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp21").innerHTML = "Turn ON";
 			}
 
 			if (request.responseText.charAt(18) == "1") {
-				document.getElementById("gp22").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp22").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp22").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp22").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp22").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp22").innerHTML = "Turn ON";
 			}
 
 			if (request.responseText.charAt(20) == "1") {
-				document.getElementById("gp23").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp23").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp23").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp23").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp23").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp23").innerHTML = "Turn ON";
 			}
 
 			if (request.responseText.charAt(22) == "1") {
-				document.getElementById("gp24").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp24").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp24").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp24").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp24").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp24").innerHTML = "Turn ON";
 			}
 
 			if (request.responseText.charAt(24) == "1") {
-				document.getElementById("gp25").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp25").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp25").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp25").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp25").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp25").innerHTML = "Turn ON";
 			}
 
@@ -245,11 +245,11 @@ function gp0(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp0").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp0").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp0").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp0").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp0").innerHTML = "Turn ON";
 			}
 		}
@@ -283,11 +283,11 @@ function gp2(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp2").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp2").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp2").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp2").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp2").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp2").innerHTML = "Turn ON";
 			}
 		}
@@ -301,11 +301,11 @@ function gp3(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp3").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp3").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp3").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp3").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp3").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp3").innerHTML = "Turn ON";
 			}
 		}
@@ -373,11 +373,11 @@ function gp7(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp7").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp7").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp7").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp7").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp7").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp7").innerHTML = "Turn ON";
 			}
 		}
@@ -391,11 +391,11 @@ function gp21(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp21").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp21").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp21").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp21").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp21").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp21").innerHTML = "Turn ON";
 			}
 		}
@@ -409,11 +409,11 @@ function gp22(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp22").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp22").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp22").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp22").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp22").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp22").innerHTML = "Turn ON";
 			}
 		}
@@ -427,11 +427,11 @@ function gp23(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp23").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp23").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp23").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp23").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp23").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp23").innerHTML = "Turn ON";
 			}
 		}
@@ -445,11 +445,11 @@ function gp24(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp24").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp24").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp24").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp24").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp24").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp24").innerHTML = "Turn ON";
 			}
 		}
@@ -463,11 +463,11 @@ function gp25(){
 		if((request.status === 200) && (request.readyState === 4)) {
 			console.log(request);
 			if (request.responseText.charAt(0) == "1") {
-				document.getElementById("gp25").setAttribute("class", "btn btn-success pull-left");
+				document.getElementById("gp25").setAttribute("class", "btn btn-success pull-right");
 				document.getElementById("gp25").innerHTML = "Turn OFF";
 			}
 			else {
-				document.getElementById("gp25").setAttribute("class", "btn btn-danger pull-left");
+				document.getElementById("gp25").setAttribute("class", "btn btn-danger pull-right");
 				document.getElementById("gp25").innerHTML = "Turn ON";
 			}
 		}

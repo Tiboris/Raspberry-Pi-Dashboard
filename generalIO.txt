@@ -2,138 +2,96 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header" data-background-color="blue">
-					<h4 class="title">Control GPIO pins Here</h4>
+				<div class="card-header" data-backGND-color="blue">
+					<h4 class="title">Control GP pins Here</h4>
 					<p class="category">Keep is simple</p>
 				</div>
 				<div class="card-content table-responsive">
 					<table class="table">
 						<thead class="text-info">
-							<th><h3>GPIO</h3></th>
+							<th><h3>GP</h3></th>
 							<th></th>
-							<th></th>
-							<th><h3 align="right">GPIO</h3></th>
 						</thead>
 						<tbody>
-							<tr>
-								<td style="vertical-align: top;"><h4>3.3V</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td style="vertical-align: bottom;"><h4 align="right">5V</h4></td>
+							<tr style="width: 100%;">
+								<td><h4>3.3V <button class="btn pull-right disabled" style="display: inline-block;">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button>5V</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SDA.1</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">5V</h4></td>
+								<td><h4>SA.1<button class="btn pull-right disabled" style="display: inline-block;">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button>5V</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SCL.1</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">Ground</h4></td>
+								<td><h4>SL.1<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled" style="display:inline-block;">Turn On</button>GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;7</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp7" onclick="gp7()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">TxD</h4></td>
+								<td><h4>GP7<button class="btn btn-danger pull-right" id="gp7" onclick="gp7()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>TxD</h4></td>
 							</tr>
 							<tr>
-								<td><h4>Ground</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">RxD</h4></td>
+								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>RxD</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;0</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp0" onclick="gp0()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp1" onclick="gp1()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;1</h4></td>
+								<td><h4>GP0<button class="btn btn-danger pull-right" id="gp0" onclick="gp0()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp1" onclick="gp1()">Turn On</button>GP1</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;2</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp2" onclick="gp2()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">Ground</h4></td>
+								<td><h4>GP2<button class="btn btn-danger pull-right" id="gp2" onclick="gp2()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;3</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp3" onclick="gp3()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp4" onclick="gp4()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;4</h4></td>
+								<td><h4>GP3<button class="btn btn-danger pull-right" id="gp3" onclick="gp3()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp4" onclick="gp4()">Turn On</button>GP4</h4></td>
 							</tr>
 							<tr>
-								<td><h4>3.3V</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp5" onclick="gp5()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;5</h4></td>
+								<td><h4>3.3V<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp5" onclick="gp5()">Turn On</button>GP5</h4></td>
 							</tr>
 							<tr>
-								<td><h4>MOSI</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">Ground</h4></td>
+								<td><h4>MOS<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>MISO</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp6" onclick="gp6()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;6</h4></td>
+								<td><h4>MIS<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp6" onclick="gp6()">Turn On</button>GP6</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SCLK</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">CE0</h4></td>
+								<td><h4>SLK<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>CE0</h4></td>
 							</tr>
 							<tr>
-								<td><h4>Ground</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">CE1</h4></td>
+								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>CE1</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SDA.0</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">SCL.0</h4></td>
+								<td><h4>SA.0<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>SL.0</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;21</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp21" onclick="gp21()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">Ground</h4></td>
+								<td><h4>GP21<button class="btn btn-danger pull-right" id="gp21" onclick="gp21()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;22</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp22" onclick="gp22()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp26" onclick="gp26()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;26</h4></td>
+								<td><h4>GP22<button class="btn btn-danger pull-right" id="gp22" onclick="gp22()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp26" onclick="gp26()">Turn On</button>GP26</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;23</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp23" onclick="gp23()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="right">Ground</h4></td>
+								<td><h4>GP23<button class="btn btn-danger pull-right" id="gp23" onclick="gp23()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;24</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp24" onclick="gp24()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp27" onclick="gp27()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;27</h4></td>
+								<td><h4>GP24<button class="btn btn-danger pull-right" id="gp24" onclick="gp24()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp27" onclick="gp27()">Turn On</button>GP27</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GPIO&nbsp;25</h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp25" onclick="gp25()">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp28" onclick="gp28()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;28</h4></td>
+								<td><h4>GP25<button class="btn btn-danger pull-right" id="gp25" onclick="gp25()">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp28" onclick="gp28()">Turn On</button>GP28</h4></td>
 							</tr>
 							<tr>
-								<td><h4>Ground</h4></td>
-								<td><h4 align="center"><button class="btn pull-left disabled">Turn On</button></h4></td>
-								<td><h4 align="center"><button class="btn btn-danger pull-left" id="gp29" onclick="gp29()">Turn On</button></h4></td>
-								<td><h4 align="right">GPIO&nbsp;29</h4></td>
+								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
+								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp29" onclick="gp29()">Turn On</button>GP29</h4></td>
 							</tr>
 						</tbody>
 					</table>
