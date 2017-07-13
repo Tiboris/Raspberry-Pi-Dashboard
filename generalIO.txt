@@ -2,96 +2,96 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header" data-backGND-color="blue">
-					<h4 class="title">Control GP pins Here</h4>
+				<div class="card-header" data-background-color="blue">
+					<h4 class="title">Control GPIO pins Here</h4>
 					<p class="category">Keep is simple</p>
 				</div>
 				<div class="card-content table-responsive">
 					<table class="table">
 						<thead class="text-info">
-							<th><h3>GP</h3></th>
+							<th><h3>GPIO</h3></th>
 							<th></th>
 						</thead>
 						<tbody>
-							<tr style="width: 100%;">
-								<td><h4>3.3V <button class="btn pull-right disabled" style="display: inline-block;">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button>5V</h4></td>
+							<tr>
+								<td style="width:50%"><h4 style="display: inline-block;">3.3V</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button><h4 align="right">5V</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SA.1<button class="btn pull-right disabled" style="display: inline-block;">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button>5V</h4></td>
+								<td><h4 style="display: inline-block;">SA.1</h4><button class="btn pull-right disabled" style="display: inline-block;">Turn On</button></td>
+								<td><button class="btn pull-left disabled" style="display: inline-block;">Turn On</button><h4 align="right">5V</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SL.1<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled" style="display:inline-block;">Turn On</button>GND</h4></td>
+								<td><h4 style="display: inline-block;">SL.1</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled" style="display:inline-block;">Turn On</button><h4 align="right">GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP7<button class="btn btn-danger pull-right" id="gp7" onclick="gp7()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>TxD</h4></td>
+								<td><h4 style="display: inline-block;">P7</h4><button class="btn btn-danger pull-right" id="gp7" onclick="gp7()">Turn On</button></td>
+								<td><button class="btn pull-left disabled" style="display:inline-block;">Turn On</button><h4 align="right">TxD</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>RxD</h4></td>
+								<td><h4 style="display: inline-block;">GND</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">RxD</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP0<button class="btn btn-danger pull-right" id="gp0" onclick="gp0()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp1" onclick="gp1()">Turn On</button>GP1</h4></td>
+								<td><h4 style="display: inline-block;">P0</h4><button class="btn btn-danger pull-right" id="gp0" onclick="gp0()">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp1" onclick="gp1()">Turn On</button><h4 align="right">P1</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP2<button class="btn btn-danger pull-right" id="gp2" onclick="gp2()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
+								<td><h4 style="display: inline-block;">P2</h4><button class="btn btn-danger pull-right" id="gp2" onclick="gp2()">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP3<button class="btn btn-danger pull-right" id="gp3" onclick="gp3()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp4" onclick="gp4()">Turn On</button>GP4</h4></td>
+								<td><h4 style="display: inline-block;">P3</h4><button class="btn btn-danger pull-right" id="gp3" onclick="gp3()">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp4" onclick="gp4()">Turn On</button><h4 align="right">P4</h4></td>
 							</tr>
 							<tr>
-								<td><h4>3.3V<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp5" onclick="gp5()">Turn On</button>GP5</h4></td>
+								<td><h4 style="display: inline-block;">3.3V</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp5" onclick="gp5()">Turn On</button><h4 align="right">P5</h4></td>
 							</tr>
 							<tr>
-								<td><h4>MOS<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
+								<td><h4 style="display: inline-block;">MOS</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>MIS<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp6" onclick="gp6()">Turn On</button>GP6</h4></td>
+								<td><h4 style="display: inline-block;">MIS</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp6" onclick="gp6()">Turn On</button><h4 align="right">P6</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SLK<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>CE0</h4></td>
+								<td><h4 style="display: inline-block;">SLK</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">CE0</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>CE1</h4></td>
+								<td><h4 style="display: inline-block;">GND</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">CE1</h4></td>
 							</tr>
 							<tr>
-								<td><h4>SA.0<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>SL.0</h4></td>
+								<td><h4 style="display: inline-block;">SA.0</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">SL.0</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP21<button class="btn btn-danger pull-right" id="gp21" onclick="gp21()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
+								<td><h4 style="display: inline-block;">P21</h4><button class="btn btn-danger pull-right" id="gp21" onclick="gp21()">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP22<button class="btn btn-danger pull-right" id="gp22" onclick="gp22()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp26" onclick="gp26()">Turn On</button>GP26</h4></td>
+								<td><h4 style="display: inline-block;">P22</h4><button class="btn btn-danger pull-right" id="gp22" onclick="gp22()">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp26" onclick="gp26()">Turn On</button><h4 align="right">P26</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP23<button class="btn btn-danger pull-right" id="gp23" onclick="gp23()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn pull-left disabled">Turn On</button>GND</h4></td>
+								<td><h4 style="display: inline-block;">P23</h4><button class="btn btn-danger pull-right" id="gp23" onclick="gp23()">Turn On</button></td>
+								<td><button class="btn pull-left disabled">Turn On</button><h4 align="right">GND</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP24<button class="btn btn-danger pull-right" id="gp24" onclick="gp24()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp27" onclick="gp27()">Turn On</button>GP27</h4></td>
+								<td><h4 style="display: inline-block;">P24</h4><button class="btn btn-danger pull-right" id="gp24" onclick="gp24()">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp27" onclick="gp27()">Turn On</button><h4 align="right">P27</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GP25<button class="btn btn-danger pull-right" id="gp25" onclick="gp25()">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp28" onclick="gp28()">Turn On</button>GP28</h4></td>
+								<td><h4 style="display: inline-block;">P25</h4><button class="btn btn-danger pull-right" id="gp25" onclick="gp25()">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp28" onclick="gp28()">Turn On</button><h4 align="right">P28</h4></td>
 							</tr>
 							<tr>
-								<td><h4>GND<button class="btn pull-right disabled">Turn On</button></h4></td>
-								<td><h4 align="right"><button class="btn btn-danger pull-left" id="gp29" onclick="gp29()">Turn On</button>GP29</h4></td>
+								<td><h4 style="display: inline-block;">GND</h4><button class="btn pull-right disabled">Turn On</button></td>
+								<td><button class="btn btn-danger pull-left" id="gp29" onclick="gp29()">Turn On</button><h4 align="right">P29</h4></td>
 							</tr>
 						</tbody>
 					</table>
